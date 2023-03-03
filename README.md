@@ -1,0 +1,1 @@
+# Fastmail - Mac Menu Bar

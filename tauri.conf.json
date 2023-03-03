@@ -1,0 +1,64 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "./assets",
+    "distDir": "./assets",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "fastmail-mac-menu-bar",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true,
+      "menuOnLeftClick": false
+    },
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "mac.menubar.fastmail",
+      "targets": "dmg"
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "url": "https://fastmail.com",
+        "fullscreen": false,
+        "transparent": true,
+        "visible": false,
+        "resizable": true,
+        "titleBarStyle": "Transparent",
+        "hiddenTitle": true,
+        "title": "Fastmail",
+        "width": 480,
+        "decorations": false,
+        "height": 600,
+        "alwaysOnTop": false,
+        "fileDropEnabled": true,
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/110.0.5481.114 Mobile/15E148 Safari/604.1"
+      }
+    ]
+  }
+}
